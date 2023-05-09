@@ -1,0 +1,8 @@
+﻿@using NewProject.Models;
+@model List<Student>
+
+@foreach(Student item in Model)
+{
+	<pre>    Name              Surname          Age
+@item.Id   @item.Name           @item.Surname         @item.Age</pre>
+}
